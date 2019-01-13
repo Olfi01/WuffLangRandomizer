@@ -26,7 +26,7 @@ namespace WuffLetterRandomizer
             {
                 Language = file.Language
             };
-            Regex regex = new Regex(@"\b(\w)+\b");
+            Regex regex = new Regex(@"[^\@]\b(\w)+\b");
             Regex number = new Regex(@"\d+");
             foreach (XmlString str in file.Strings)
             {
